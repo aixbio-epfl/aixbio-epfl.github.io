@@ -1,0 +1,56 @@
+events:
+  # talks can be either:
+  # 1) tuple-like lists: talks: [["Speaker", "Talk Title"], ["Speaker", "Talk Title"]]
+  # 2) object lists:     talks: [{ speaker: "Speaker", title: "Talk Title" }]
+  # 3) speaker links:    talks: [{ speaker: "Speaker", speaker_url: "https://...", title: "Talk Title" }]
+
+  - title: "Community meetup: May 2026"
+    date: 20/05/2026
+    description: May meetup of the AI x Bio community at EPFL.
+    talks:
+
+  - title: "Community meetup: April 2026"
+    date: 15/04/2026
+    description: April meetup of the AI x Bio community at EPFL.
+    talks:
+      - speaker: Yiming Qin
+      - speaker: Kai Yi
+
+  - title: "Community meetup: March 2026"
+    date: 18/03/2026
+    description: March meetup of the AI x Bio community at EPFL.
+    talks:
+      - speaker: "Tingyang Yu (MLBio Lab)"
+        speaker_url: "https://yistyu.github.io/"
+        title: "Tissue reassembly with generative AI"
+      - speaker: "Cyril Malbranke (Bitbol Lab)"
+        speaker_url: "https://people.epfl.ch/cyril.malbranke?lang=en"
+        title: "ProteomeLM: A proteome-scale language model allowing fast prediction of protein-protein interactions and gene essentiality"
+
+  - title: "Community meetup: February 2026"
+    date: 18/02/2026
+    description: February meetup of the AI x Bio community at EPFL.
+    talks:
+      - speaker: Andrew Salem
+      - speaker: Maximilian Hoffmann
+
+  - title: "Community meetup: January 2026"
+    date: 21/01/2026
+    description: January meetup of the AI x Bio community at EPFL.
+    talks:
+      - speaker: Parth Bibekar
+      - speaker: Ali Sadaat
+
+  - title: "Community meetup: November 2025"
+    date: 19/11/2025
+    description: November meetup of the AI x Bio community at EPFL.
+    talks:
+      - speaker: Casper Goverde
+      - speaker: Tian Zhu
+  
+  - title: "Community meetup: October 2025"
+    date: 15/10/2025
+    description: Inaugural meetup for the AI x Bio community at EPFL.
+    talks:
+      - speaker: Vamsi Nallapareddy
+      - speaker: Francesco Craighero

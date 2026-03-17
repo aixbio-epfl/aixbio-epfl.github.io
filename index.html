@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI x Bio Community Forum</title>
+    <link href="https://fonts.cdnfonts.com/css/terminal-grotesque" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="visually-hidden">AI x Bio Community</h1>
+        <img src="assets/title_abc.png" alt="AI x Bio Community" class="title-image">
+        <p class="description">
+             <br>
+            Welcome to the AI x Bio Community at EPFL. We hold monthly events to foster collaboration and knowledge sharing between all members of the EPFL community interested in the intersection of artificial intelligence and biology.  
+            <br><br>
+            This is an initiative of the <a href="https://ai.epfl.ch/" target="_blank" rel="noopener noreferrer">EPFL AI Center</a>.
+        </p>
+    </header>
+
+    <main>
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <div id="upcoming-events-list" class="events-list">
+                <!-- Events will be populated here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2>Past Events</h2>
+            <div id="past-events-list" class="events-list">
+                <!-- Past events will be populated here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
