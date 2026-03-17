@@ -1,4 +1,11 @@
 events:
+  # event fields can include:
+  # - title: "Community meetup: Month YYYY"
+  # - date: "DD/MM/YYYY"
+  # - time: "18:00-20:00" (optional)
+  # - place: "Building room" (optional)
+  # - description: "..."
+  # - talks: [...]
   # talks can be either:
   # 1) tuple-like lists: talks: [["Speaker", "Talk Title"], ["Speaker", "Talk Title"]]
   # 2) object lists:     talks: [{ speaker: "Speaker", title: "Talk Title" }]
@@ -6,11 +13,15 @@ events:
 
   - title: "Community meetup: May 2026"
     date: 20/05/2026
+    time: "11:00"
+    place: "ELE 117"
     description: May meetup of the AI x Bio community at EPFL.
     talks:
 
   - title: "Community meetup: April 2026"
     date: 15/04/2026
+    time: "11:00"
+    place: "ELE 117"
     description: April meetup of the AI x Bio community at EPFL.
     talks:
       - speaker: Yiming Qin
@@ -18,6 +29,8 @@ events:
 
   - title: "Community meetup: March 2026"
     date: 18/03/2026
+    time: "11:00"
+    place: "ELE 117"
     description: March meetup of the AI x Bio community at EPFL.
     talks:
       - speaker: "Tingyang Yu (MLBio Lab)"
@@ -29,6 +42,8 @@ events:
 
   - title: "Community meetup: February 2026"
     date: 18/02/2026
+    time: "11:00"
+    place: "ELE 117"
     description: February meetup of the AI x Bio community at EPFL.
     talks:
       - speaker: Andrew Salem
@@ -36,6 +51,8 @@ events:
 
   - title: "Community meetup: January 2026"
     date: 21/01/2026
+    time: "11:00"
+    place: "ELE 117"
     description: January meetup of the AI x Bio community at EPFL.
     talks:
       - speaker: Parth Bibekar
@@ -43,6 +60,8 @@ events:
 
   - title: "Community meetup: November 2025"
     date: 19/11/2025
+    time: "11:00"
+    place: "ELE 117"
     description: November meetup of the AI x Bio community at EPFL.
     talks:
       - speaker: Casper Goverde
@@ -50,6 +69,8 @@ events:
   
   - title: "Community meetup: October 2025"
     date: 15/10/2025
+    time: "11:00"
+    place: "ELE 117"
     description: Inaugural meetup for the AI x Bio community at EPFL.
     talks:
       - speaker: Vamsi Nallapareddy

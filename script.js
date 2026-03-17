@@ -171,6 +171,23 @@ function renderTalks(talks) {
     `;
 }
 
+function renderEventMeta(event) {
+    const time = typeof event.time === 'string' ? event.time.trim() : '';
+    const place = typeof event.place === 'string' ? event.place.trim() : '';
+
+    if (!time && !place) {
+        return '';
+    }
+
+    const safeTime = time ? `<span class="event-time">${escapeHtml(time)}</span>` : '';
+    const safePlace = place ? `<span class="event-place">${escapeHtml(place)}</span>` : '';
+    const separator = time && place ? '<span class="event-meta-separator"> | </span>' : '';
+
+    return `
+        <p class="event-meta">${safeTime}${separator}${safePlace}</p>
+    `;
+}
+
 function sortEventsByDate(events, direction = 'asc') {
     const factor = direction === 'desc' ? -1 : 1;
 
@@ -263,6 +280,7 @@ function renderEvents(events, containerId, highlightedEvent = null, cardVariant 
 
         eventCard.innerHTML = `
             <div class="event-date">${formatEventDateForDisplay(event.date)}</div>
+            ${renderEventMeta(event)}
             <h3 class="event-title">${event.title || 'Untitled Event'}</h3>
             <p class="event-description">${event.description || ''}</p>
             ${renderTalks(event.talks)}

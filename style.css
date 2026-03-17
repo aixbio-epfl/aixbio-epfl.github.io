@@ -241,6 +241,22 @@ main {
     letter-spacing: 0.04em;
 }
 
+.event-meta {
+    margin: -0.45rem 0 0.75rem;
+    color: var(--muted-ink);
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+}
+
+.event-time,
+.event-place {
+    font-weight: 500;
+}
+
+.event-meta-separator {
+    color: #8792a2;
+}
+
 .event-title {
     margin: 0 0 1rem;
     font-size: clamp(1.2rem, 2.8vw, 1.75rem);
@@ -257,6 +273,10 @@ main {
 
 .event-card.past-event .event-date {
     color: #7c8378;
+}
+
+.event-card.past-event .event-meta {
+    color: #788071;
 }
 
 .event-card.past-event .event-title {
